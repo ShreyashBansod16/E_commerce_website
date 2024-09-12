@@ -5,7 +5,7 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { MdMenu } from "react-icons/md";
 import RespnsiveMenu from './RespnsiveMenu';
 import { FaStore } from "react-icons/fa";
-
+import {motion } from "framer-motion"
 
 const NavbarMenu=[
     {
@@ -43,7 +43,11 @@ const Navbar = () => {
     return (
         <>
    <nav className='md:pt-4 relative z-30 bg-white'>
-    <div className="container  py-4 flex  justify-between  items-center  md:pt-4">
+    <motion.div 
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{duration:0.5,delay:0.5}}
+    className="container  py-4 flex  justify-between  items-center  md:pt-4">
         {/*logo selection*/}
         <div className='text-2xl flex items-center font-bold gap-4 uppercase '>
             <p className='text-primary'>E-commerce</p>
@@ -72,7 +76,7 @@ const Navbar = () => {
             <MdMenu className='text-4xl'/>
 
         </div>
-        </div>
+        </motion.div>
    </nav>
     {/*Mobiile menu */}
    < RespnsiveMenu open={open} />
