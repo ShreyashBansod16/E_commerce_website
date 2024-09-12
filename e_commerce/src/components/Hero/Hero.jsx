@@ -34,11 +34,6 @@ const Hero = () => {
         <div className='flex justify-center items-center'>
             <img src={preview} alt='' className='W-[350px] md:w-[550px] drop-shadow'></img>
         </div>
-        {/* img info*/}
-        <div className='absolute top-14
-         md:top-[140px] right-1/2  opacity-80 rotate-[ 40deg]'>
-            <img src={logo } alt='' className='w-full md:max-w-[300px] ' ></img>
-        </div>
         
     </div>
 
