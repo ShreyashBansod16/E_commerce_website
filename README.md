@@ -54,10 +54,12 @@ This project is an e-commerce website where users can view products, cart, and p
 
 3.Install dependencies:
  1.Using npm:
+
   ```bash
   npm install
  2.Using yarn:
-  ```bash
+
+   ```bash
   yarn install
 
 4.To start development server:
