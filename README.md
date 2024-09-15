@@ -10,10 +10,9 @@ Welcome to the E-Commerce Website project! This application is built using React
 - [Getting Started](#getting-started)
 - [Development](#development)
 
-
 ## Project Overview
 
-This project is an e-commerce website where users can view products, cart, and proceed to checkout. It is designed to be fast and responsive, leveraging modern web technologies.
+This project is an e-commerce website where users can view products, add them to the cart, and proceed to checkout. It is designed to be fast and responsive, leveraging modern web technologies.
 
 ## Features
 
@@ -44,30 +43,43 @@ This project is an e-commerce website where users can view products, cart, and p
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/ShreyashBansod16/E_commerce_website.git
+    ```bash
+    git clone https://github.com/ShreyashBansod16/E_commerce_website.git
+    ```
 
-2.Navigate into the project directory:
-    
-       ```bash
-        cd .\e_commerce\
-3.Install dependencies:
-    1.Using npm:
+2. Navigate into the project directory:
 
-     ```bash
-     npm install
- 2.Using yarn:
+    ```bash
+    cd e_commerce
+    ```
 
-      ```bash
-      yarn install
+3. Install dependencies:
 
-4.To start development server:
-      1.Using npm:
-        ```bash
-        npm run dev
-      2.Using yarn:
-        ```bash
-        yarn dev
+    **Using npm:**
+
+    ```bash
+    npm install
+    ```
+
+    **Using Yarn:**
+
+    ```bash
+    yarn install
+    ```
+
+4. Start the development server:
+
+    **Using npm:**
+
+    ```bash
+    npm run dev
+    ```
+
+    **Using Yarn:**
+
+    ```bash
+    yarn dev
+    ```
 
 
 
