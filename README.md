@@ -48,8 +48,9 @@ This project is an e-commerce website where users can view products, cart, and p
    git clone https://github.com/ShreyashBansod16/E_commerce_website.git
 
 2.Navigate into the project directory:
-    ```bash
-     cd .\e_commerce\
+    
+       ```bash
+        cd .\e_commerce\
 3.Install dependencies:
     1.Using npm:
 
