@@ -68,7 +68,7 @@ function Contacts() {
                 <label className="block text-sm mb-2">Your Message</label>
                 <textarea placeholder="Please write down your message" className="w-full p-2 border rounded-md"></textarea>
               </div>
-              <button type="submit" className="bg-orange-300 text-white py-2 px-4 rounded-md hover:bg-orange-400">Send &gt;</button>
+              <button type="submit" className="bg-primary text-white py-2 px-4 rounded-md hover:bg-orange-400">Send &gt;</button>
             </form>
           </div>
         </div>

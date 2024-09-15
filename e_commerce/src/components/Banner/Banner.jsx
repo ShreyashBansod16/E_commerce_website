@@ -1,48 +1,37 @@
 import React from 'react'
 import logo from "../../assets/banner.png"
-import { FadeLeft, FadeUP } from '../../utility/Animation';
-import {motion } from 'framer-motion'
+
 
 const Banner = () => {
   return (
     <section className='bg-secondary/10'>
         <div className="container grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0 py-14">
           <div className='flex justify-center items-center '>  
-            <motion.img 
-            initial={{opacity:0,scale:0.5}}
-            whileInView={{opacity:1,scale:1}}
-            transition={{type:"spring",stiffness:100,delay:0.2}}
+            <img 
+           
             src={logo} alt='' className='w-[300px] md:max-w-[] h-full object-cover '>
-            </motion.img></div>
+            </img></div>
             <div className='flex flex-col justify-center spac'>
         
             <div className='text-center md:text-left space-y-6 lg:max-w-[400px]'>
-                <motion.h1
-                variants={FadeUP(0.5)}
-                initial="hidden"
-                whileInView="visible"
-                //viewport={{once:true}}
+                <h1
+                
                 
                 className='text-3xl lg:text-6xl font-bold uppercase '>
                     Brand 
-                </motion.h1>
-                <motion.p
-                 variants={FadeUP(0.7)}
-                 initial="hidden"
-                 whileInView="visible"
-                 //viewport={{once:true}}
+                </h1>
+                <p
+                
                  >
-                Welcome to [Your Store Name] - Your go-to destination for 
-        all your shopping needs! From fresh groceries to the latest 
-        tech and fashion, we offer a wide selection of quality products 
-        delivered right to your door. Enjoy convenience, great deals, and 
-        everything you need, all in one place
-                </motion.p>
-                <motion.div   variants={FadeUP(1.1)} initial="hidden" animate="visible"  
+              <b>Our Story:</b>  Dive into InnovateMart’s journey from a bold vision in 2023 to becoming a leading e-commerce destination, committed to delivering unique solutions and exceptional service.<br></br>
+
+<b>Core Values:</b> At InnovateMart, we uphold principles of innovation, customer satisfaction, and sustainability, ensuring every product we offer meets the highest standards of quality and excellence.
+                </p>
+                <div    
          className='flex justify-center md:justify-start'>
           <button className='primary-btn '>
             Learn More</button>
-        </motion.div>
+        </div>
             </div>
         </div>
         </div>

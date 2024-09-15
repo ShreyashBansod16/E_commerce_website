@@ -1,8 +1,7 @@
 import React from 'react'
 import { IoBagHandleSharp } from "react-icons/io5";
 import preview from "../../assets/preview-removebg-preview.png"
-import {motion } from "framer-motion"
-import { FadeRight } from '../../utility/Animation';
+
 
 const Hero = () => {
   return (
@@ -11,38 +10,38 @@ const Hero = () => {
         {/* Brand info*/}
 <div className='flex flex-col justify-center py-14 md:py-0 relative z-10 '>
     <div className='text-center md:text-left space-y-6 lg:max-w-[400px]'>
-        <motion.h1 variants={FadeRight(0.6)} initial="hidden" animate="visible"  className='text-5xl lg:text-6xl font-bold leading-relaxed xl:leading-loose font-averia'>One
+        <h1   className='text-5xl lg:text-6xl font-bold leading-relaxed xl:leading-loose font-averia'>One
         <br/>
-        Stop <span className='text-secondary'>Shop!</span></motion.h1>
-        <motion.p   variants={FadeRight(0.9)} initial="hidden" animate="visible"  className='text-2xl tracking-wide'>Order now for frsh healthy life</motion.p>
-        <motion.p variants={FadeRight(1.2)} initial="hidden" animate="visible"
+        Stop <span className='text-secondary'>Shop!</span></h1>
+        <p    className='text-2xl tracking-wide'>Order now for frsh healthy life</p>
+        <p 
         className='text-gray-400'>
-        Welcome to [Your Store Name] - Your go-to destination for 
+        Welcome to InnovateMart- Your go-to destination for 
         all your shopping needs! From fresh groceries to the latest 
         tech and fashion, we offer a wide selection of quality products 
         delivered right to your door. Enjoy convenience, great deals, and 
         everything you need, all in one place
-        </motion.p>
+        </p>
         {/* button section*/}
-        <motion.div   variants={FadeRight(1.5)} initial="hidden" animate="visible"  
+        <div   
          className='flex justify-center md:justify-start'>
           <button className='primary-btn flex justify-center gap-2 items-center'>
             <span><IoBagHandleSharp></IoBagHandleSharp>
                 </span>Order Now</button>
-        </motion.div>
+        </div>
     </div>
 </div>
 
         {/* img info*/}
         <div className='flex justify-center items-center'>
-            <motion.img
+            <img
             initial={{ opacity:0 ,x:200,rotate:75}}
             animate={{opacity:1,x:0,rotate:0}}
             transition={{duration:1,delay:0.2}}
         
             
             
-            src={preview} alt='' className='W-[350px] md:w-[550px] drop-shadow'></motion.img>
+            src={preview} alt='' className='W-[350px] md:w-[550px] drop-shadow'></img>
         </div>
         
     </div>
