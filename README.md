@@ -48,26 +48,26 @@ This project is an e-commerce website where users can view products, cart, and p
    git clone https://github.com/ShreyashBansod16/E_commerce_website.git
 
 2.Navigate into the project directory:
-  ```bash
-  cd .\e_commerce\
-
-
+    ```bash
+     cd .\e_commerce\
 3.Install dependencies:
- 1.Using npm:
+    1.Using npm:
 
-  ```bash
-  npm install
+     ```bash
+     npm install
  2.Using yarn:
 
-   ```bash
-  yarn install
+      ```bash
+      yarn install
 
 4.To start development server:
-   1.Using npm:
-     ```bash
-     npm run dev
-   2.Using yarn:
-     ```bash
-     yarn dev
+      1.Using npm:
+        ```bash
+        npm run dev
+      2.Using yarn:
+        ```bash
+        yarn dev
+
+
 
   
