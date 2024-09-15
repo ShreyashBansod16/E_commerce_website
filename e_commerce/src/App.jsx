@@ -8,6 +8,8 @@ import Product from "./components/Navpage/Product";
 import About from "./components/Navpage/About";
 import Shop from "./components/Navpage/Shop";
 import Contacts from "./components/Navpage/Contacts";
+import Cart from "./components/cart/Cart";
+
 
 // Home component to render on the root ("/") route
 const Home = () => {
@@ -16,6 +18,7 @@ const Home = () => {
       <Hero />
       <Menus />
       <Banner />
+      
     </>
   );
 };
@@ -31,6 +34,8 @@ const App = () => {
           <Route path="/about" element={<About />} /> 
           <Route path="/shop" element={<Shop />} /> 
           <Route path="/contacts" element={<Contacts />} /> 
+          <Route path="/cart" element={<Cart />} /> 
+
         </Routes>
       </Router>
     </main>

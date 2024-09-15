@@ -6,7 +6,7 @@ import { MdMenu } from "react-icons/md";
 import RespnsiveMenu from './RespnsiveMenu';
 import { FaStore } from "react-icons/fa";
 import {motion } from "framer-motion"
-import { Link } from 'react-router-dom';
+import { Link,useLocation } from 'react-router-dom';
 
 const NavbarMenu=[
     {
@@ -39,6 +39,7 @@ const NavbarMenu=[
 
 const Navbar = () => {
   const [open,setopen]=useState(false);
+  const location = useLocation();
   
   
     return (
@@ -61,12 +62,17 @@ const Navbar = () => {
                 {NavbarMenu.map((menu) => (
                     <li key={menu.id} >
                 <Link to={menu.link}
-                className="inline-block py-1 px-3 hover:text-primary hover:shadow-[0_3px_0_-1px_#ef4444] font-semibold ">{menu.title}</Link>
+                 className={`inline-block py-1 px-3 font-semibold ${
+                    location.pathname === menu.link
+                      ? 'text-primary shadow-[0_3px_0_-1px_#ef4444]' 
+                      : 'hover:text-primary hover:shadow-[0_3px_0_-1px_#ef4444]'
+                  }`}
+                >{menu.title}</Link>
                 </li>
                 ))}
-                <button className='text-2xl hover:bg-primary hover:text-white rounded-full p-2 duration-200' >
+                <Link to={"/cart"}><button className={` text-2xl ${location.pathname==="/cart"?'bg-primary text-white rounded-full p-2':' hover:bg-primary hover:text-white rounded-full p-2 duration-200'}`} >
                     <MdOutlineShoppingCart></MdOutlineShoppingCart>
-                </button>
+                </button> </Link>
                 
             </ul>
         </div>
