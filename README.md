@@ -8,7 +8,7 @@ Welcome to the E-Commerce Website project! This application is built using React
 - [Features](#features)
 - [Technologies](#technologies)
 - [Getting Started](#getting-started)
-- [Development](#development)
+
 
 ## Project Overview
 
